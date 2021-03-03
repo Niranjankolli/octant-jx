@@ -1,0 +1,437 @@
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1614777801.022656,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-niranjankolli-octant-jx-master-bsmst-z9nx4[0m
+{"level":"info","ts":1614777808.4701586,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*************/octant-**.git @ v0.0.45 in path /workspace/source"}
+{"level":"warn","ts":1614777808.4702368,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1614777808.4988048,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
+go build -o bin/octant-** -ldflags " -X main.version=0.0.45" cmd/octant-**/main.go
+go: downloading github.com/vmware-tanzu/octant v0.17.0
+go: downloading github.com/jenkins-x/**-logging/v3 v3.0.3
+go: downloading github.com/jenkins-x/pipeline v0.3.2-0.20210118090417-1e821d85abf6
+go: downloading k8s.io/apimachinery v0.19.3
+go: downloading github.com/jenkins-x/**-helpers/v3 v3.0.84
+go: downloading github.com/jenkins-x/**-api/v4 v4.0.25
+go: extracting github.com/jenkins-x/**-logging/v3 v3.0.3
+go: downloading github.com/jenkins-x/**-preview v0.0.160
+go: extracting github.com/jenkins-x/**-api/v4 v4.0.25
+go: extracting github.com/jenkins-x/**-helpers/v3 v3.0.84
+go: downloading github.com/rickar/props v0.0.0-20170718221555-0b06aeb2f037
+go: extracting k8s.io/apimachinery v0.19.3
+go: extracting github.com/jenkins-x/**-preview v0.0.160
+go: extracting github.com/rickar/props v0.0.0-20170718221555-0b06aeb2f037
+go: downloading k8s.io/api v0.19.3
+go: downloading github.com/fatih/color v1.10.0
+go: downloading github.com/gogo/protobuf v1.3.2
+go: extracting github.com/fatih/color v1.10.0
+go: extracting github.com/jenkins-x/pipeline v0.3.2-0.20210118090417-1e821d85abf6
+go: extracting github.com/vmware-tanzu/octant v0.17.0
+go: extracting k8s.io/api v0.19.3
+go: extracting github.com/gogo/protobuf v1.3.2
+go: downloading github.com/davecgh/go-spew v1.1.1
+go: downloading github.com/mattn/go-isatty v0.0.12
+go: downloading github.com/dop251/goja v0.0.0-20200629185240-bfd59704b500
+go: downloading k8s.io/client-go v0.19.3
+go: downloading github.com/jenkins-x/**-kube-client/v3 v3.0.2
+go: downloading k8s.io/klog v1.0.0
+go: extracting github.com/davecgh/go-spew v1.1.1
+go: downloading k8s.io/kube-openapi v0.0.0-20210113233702-8566a335510f
+go: extracting github.com/mattn/go-isatty v0.0.12
+go: downloading golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
+go: extracting k8s.io/klog v1.0.0
+go: downloading k8s.io/klog/v2 v2.5.0
+go: downloading google.golang.org/grpc v1.35.0
+go: downloading github.com/go-openapi/spec v0.19.7
+go: downloading github.com/json-iterator/go v1.1.10
+go: extracting golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
+go: extracting k8s.io/klog/v2 v2.5.0
+go: extracting github.com/jenkins-x/**-kube-client/v3 v3.0.2
+go: downloading github.com/hashicorp/go-plugin v1.0.1
+go: downloading github.com/stretchr/testify v1.7.0
+go: extracting github.com/dop251/goja v0.0.0-20200629185240-bfd59704b500
+go: downloading github.com/fsnotify/fsnotify v1.4.9
+go: extracting github.com/stretchr/testify v1.7.0
+go: extracting github.com/fsnotify/fsnotify v1.4.9
+go: extracting github.com/hashicorp/go-plugin v1.0.1
+go: extracting github.com/go-openapi/spec v0.19.7
+go: downloading golang.org/x/net v0.0.0-20210119194325-5f4716e94777
+go: extracting github.com/json-iterator/go v1.1.10
+go: downloading github.com/sirupsen/logrus v1.7.0
+go: downloading github.com/go-openapi/swag v0.19.7
+go: extracting github.com/go-openapi/swag v0.19.7
+go: downloading golang.org/x/text v0.3.5
+go: extracting github.com/sirupsen/logrus v1.7.0
+go: extracting k8s.io/kube-openapi v0.0.0-20210113233702-8566a335510f
+go: extracting k8s.io/client-go v0.19.3
+go: extracting google.golang.org/grpc v1.35.0
+go: extracting golang.org/x/net v0.0.0-20210119194325-5f4716e94777
+go: downloading github.com/mailru/easyjson v0.7.1-0.20191009090205-6c0755d89d1e
+go: extracting github.com/mailru/easyjson v0.7.1-0.20191009090205-6c0755d89d1e
+go: downloading google.golang.org/protobuf v1.25.0
+go: downloading sigs.k8s.io/structured-merge-diff v0.0.0-20190525122527-15d366b2352e
+go: downloading google.golang.org/genproto v0.0.0-20210202153253-cf70463f6119
+go: downloading k8s.io/apiextensions-apiserver v0.20.1
+go: downloading sigs.k8s.io/yaml v1.2.0
+go: downloading helm.sh/helm/v3 v3.5.0
+go: extracting sigs.k8s.io/structured-merge-diff v0.0.0-20190525122527-15d366b2352e
+go: downloading sigs.k8s.io/structured-merge-diff/v4 v4.0.3
+go: extracting sigs.k8s.io/yaml v1.2.0
+go: downloading github.com/golang/protobuf v1.4.3
+go: extracting sigs.k8s.io/structured-merge-diff/v4 v4.0.3
+go: extracting github.com/golang/protobuf v1.4.3
+go: extracting k8s.io/apiextensions-apiserver v0.20.1
+go: downloading golang.org/x/oauth2 v0.0.0-20210201163806-010130855d6c
+go: extracting google.golang.org/protobuf v1.25.0
+go: extracting golang.org/x/oauth2 v0.0.0-20210201163806-010130855d6c
+go: extracting helm.sh/helm/v3 v3.5.0
+go: downloading github.com/gobwas/glob v0.2.3
+go: downloading k8s.io/kube-aggregator v0.19.3
+go: downloading github.com/imdario/mergo v0.3.11
+go: downloading knative.dev/pkg v0.0.0-20210107022335-51c72e24c179
+go: downloading github.com/rawlingsj/jsonschema v0.0.0-20201130104235-44c4fb269f83
+go: extracting github.com/gobwas/glob v0.2.3
+go: downloading github.com/google/gofuzz v1.2.0
+go: extracting github.com/imdario/mergo v0.3.11
+go: downloading github.com/spf13/afero v1.4.1
+go: extracting github.com/google/gofuzz v1.2.0
+go: downloading github.com/pmezard/go-difflib v1.0.0
+go: extracting github.com/rawlingsj/jsonschema v0.0.0-20201130104235-44c4fb269f83
+go: downloading github.com/go-openapi/jsonreference v0.19.3
+go: extracting k8s.io/kube-aggregator v0.19.3
+go: extracting github.com/pmezard/go-difflib v1.0.0
+go: extracting github.com/go-openapi/jsonreference v0.19.3
+go: downloading github.com/dop251/goja_nodejs v0.0.0-20200706082813-b2775b86b9e0
+go: downloading github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d
+go: extracting github.com/spf13/afero v1.4.1
+go: downloading golang.org/x/time v0.0.0-20201208040808-7e3f01d25324
+go: extracting github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d
+go: downloading github.com/google/uuid v1.1.4
+go: extracting github.com/dop251/goja_nodejs v0.0.0-20200706082813-b2775b86b9e0
+go: downloading github.com/spf13/pflag v1.0.5
+go: downloading github.com/hashicorp/go-multierror v1.1.0
+go: extracting github.com/hashicorp/go-multierror v1.1.0
+go: downloading go.uber.org/zap v1.16.0
+go: extracting github.com/google/uuid v1.1.4
+go: downloading github.com/Azure/go-autorest v14.0.1+incompatible
+go: extracting golang.org/x/time v0.0.0-20201208040808-7e3f01d25324
+go: extracting github.com/spf13/pflag v1.0.5
+go: downloading github.com/mitchellh/go-testing-interface v1.0.0
+go: extracting go.uber.org/zap v1.16.0
+go: downloading github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32
+go: extracting github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32
+go: downloading github.com/go-sourcemap/sourcemap v2.1.3+incompatible
+go: extracting github.com/mitchellh/go-testing-interface v1.0.0
+go: downloading github.com/peterbourgon/diskv v2.0.1+incompatible
+go: extracting knative.dev/pkg v0.0.0-20210107022335-51c72e24c179
+go: extracting github.com/Azure/go-autorest v14.0.1+incompatible
+go: downloading github.com/Azure/go-autorest/autorest v0.11.18
+go: downloading gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+go: extracting github.com/peterbourgon/diskv v2.0.1+incompatible
+go: downloading github.com/gorilla/mux v1.8.0
+go: extracting github.com/go-sourcemap/sourcemap v2.1.3+incompatible
+go: downloading github.com/jenkins-x/**-pipeline v0.0.109
+go: extracting github.com/gorilla/mux v1.8.0
+go: downloading github.com/modern-go/reflect2 v1.0.1
+go: extracting github.com/Azure/go-autorest/autorest v0.11.18
+go: downloading github.com/hashicorp/errwrap v1.0.0
+go: downloading github.com/Azure/go-autorest/autorest/adal v0.9.13
+go: extracting gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+go: downloading github.com/emicklei/go-restful v2.9.5+incompatible
+go: extracting github.com/Azure/go-autorest/autorest/adal v0.9.13
+go: downloading github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79
+go: extracting github.com/hashicorp/errwrap v1.0.0
+go: downloading github.com/google/go-containerregistry v0.4.0
+go: extracting golang.org/x/text v0.3.5
+go: extracting github.com/modern-go/reflect2 v1.0.1
+go: downloading k8s.io/utils v0.0.0-20210111153108-fddb29f9d009
+go: extracting github.com/jenkins-x/**-pipeline v0.0.109
+go: extracting github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79
+go: downloading github.com/go-logr/logr v0.4.0
+go: extracting github.com/emicklei/go-restful v2.9.5+incompatible
+go: extracting k8s.io/utils v0.0.0-20210111153108-fddb29f9d009
+go: downloading github.com/pkg/errors v0.9.1
+go: extracting github.com/go-logr/logr v0.4.0
+go: downloading golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad
+go: extracting github.com/pkg/errors v0.9.1
+go: downloading gopkg.in/inf.v0 v0.9.1
+go: downloading gopkg.in/yaml.v2 v2.4.0
+go: extracting gopkg.in/inf.v0 v0.9.1
+go: downloading github.com/evanphx/json-patch v4.9.0+incompatible
+go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: extracting gopkg.in/yaml.v2 v2.4.0
+go: downloading github.com/form3tech-oss/jwt-go v3.2.2+incompatible
+go: extracting github.com/evanphx/json-patch v4.9.0+incompatible
+go: downloading go.uber.org/multierr v1.6.0
+go: downloading github.com/Azure/go-autorest/logger v0.2.1
+go: extracting go.uber.org/multierr v1.6.0
+go: downloading golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
+go: extracting github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: extracting github.com/form3tech-oss/jwt-go v3.2.2+incompatible
+go: extracting github.com/google/go-containerregistry v0.4.0
+go: extracting github.com/Azure/go-autorest/logger v0.2.1
+go: downloading github.com/google/go-cmp v0.5.4
+go: extracting golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad
+go: extracting github.com/google/go-cmp v0.5.4
+go: downloading github.com/googleapis/gnostic v0.5.4
+go: downloading github.com/go-openapi/jsonpointer v0.19.3
+go: downloading github.com/xeipuuv/gojsonschema v1.2.0
+go: extracting github.com/go-openapi/jsonpointer v0.19.3
+go: downloading github.com/Azure/go-autorest/autorest/date v0.3.0
+go: extracting github.com/xeipuuv/gojsonschema v1.2.0
+go: downloading github.com/spf13/viper v1.7.1
+go: downloading github.com/hashicorp/go-hclog v0.14.1
+go: extracting github.com/Azure/go-autorest/autorest/date v0.3.0
+go: downloading github.com/oklog/run v1.0.0
+go: extracting github.com/hashicorp/go-hclog v0.14.1
+go: downloading golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf
+go: extracting github.com/spf13/viper v1.7.1
+go: extracting github.com/oklog/run v1.0.0
+go: downloading github.com/PuerkitoBio/purell v1.1.1
+go: downloading github.com/google/btree v1.0.0
+go: extracting github.com/googleapis/gnostic v0.5.4
+go: extracting golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
+go: extracting golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf
+go: downloading gopkg.in/ini.v1 v1.51.0
+go: extracting github.com/PuerkitoBio/purell v1.1.1
+go: downloading github.com/subosito/gotenv v1.2.0
+go: extracting github.com/google/btree v1.0.0
+go: downloading go.uber.org/atomic v1.7.0
+go: extracting gopkg.in/ini.v1 v1.51.0
+go: downloading github.com/magiconair/properties v1.8.4
+go: extracting github.com/subosito/gotenv v1.2.0
+go: downloading github.com/dlclark/regexp2 v1.2.0
+go: extracting go.uber.org/atomic v1.7.0
+go: downloading github.com/hashicorp/golang-lru v0.5.4
+go: downloading github.com/hashicorp/hcl v1.0.0
+go: extracting github.com/magiconair/properties v1.8.4
+go: downloading github.com/satori/go.uuid v1.2.1-0.20180103174451-36e9d2ebbde5
+go: extracting github.com/hashicorp/hcl v1.0.0
+go: extracting github.com/hashicorp/golang-lru v0.5.4
+go: downloading github.com/pelletier/go-toml v1.7.0
+go: extracting github.com/satori/go.uuid v1.2.1-0.20180103174451-36e9d2ebbde5
+go: extracting github.com/pelletier/go-toml v1.7.0
+go: downloading gopkg.in/evanphx/json-patch.v4 v4.9.0
+go: downloading github.com/jenkins-x/logrus-stackdriver-formatter v0.2.3
+go: downloading github.com/Azure/go-autorest/tracing v0.6.0
+go: downloading github.com/mattn/go-colorable v0.1.8
+go: extracting github.com/jenkins-x/logrus-stackdriver-formatter v0.2.3
+go: extracting gopkg.in/evanphx/json-patch.v4 v4.9.0
+go: extracting github.com/Azure/go-autorest/tracing v0.6.0
+go: downloading github.com/go-stack/stack v1.8.0
+go: extracting github.com/mattn/go-colorable v0.1.8
+go: downloading github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: extracting github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: downloading github.com/mitchellh/mapstructure v1.4.0
+go: extracting github.com/dlclark/regexp2 v1.2.0
+go: extracting github.com/go-stack/stack v1.8.0
+go: downloading gomodules.xyz/jsonpatch/v2 v2.1.0
+go: extracting github.com/mitchellh/mapstructure v1.4.0
+go: extracting gomodules.xyz/jsonpatch/v2 v2.1.0
+go: downloading cloud.google.com/go v0.76.0
+go: downloading github.com/spf13/jwalterweatherman v1.0.0
+go: downloading github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415
+go: downloading github.com/spf13/cast v1.3.1
+go: downloading github.com/docker/spdystream v0.0.0-20181023171402-6480d4af844c
+go: extracting github.com/spf13/jwalterweatherman v1.0.0
+go: extracting github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415
+go: downloading github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb
+go: extracting github.com/spf13/cast v1.3.1
+go: extracting github.com/docker/spdystream v0.0.0-20181023171402-6480d4af844c
+go: extracting github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb
+go: extracting google.golang.org/genproto v0.0.0-20210202153253-cf70463f6119
+go: extracting cloud.google.com/go v0.76.0
+go: finding github.com/jenkins-x/**-logging/v3 v3.0.3
+go: finding github.com/fatih/color v1.10.0
+go: finding github.com/mattn/go-colorable v0.1.8
+go: finding github.com/mattn/go-isatty v0.0.12
+go: finding golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
+go: finding github.com/jenkins-x/logrus-stackdriver-formatter v0.2.3
+go: finding github.com/go-stack/stack v1.8.0
+go: finding github.com/sirupsen/logrus v1.7.0
+go: finding github.com/pkg/errors v0.9.1
+go: finding github.com/rickar/props v0.0.0-20170718221555-0b06aeb2f037
+go: finding github.com/vmware-tanzu/octant v0.17.0
+go: finding k8s.io/apimachinery v0.19.3
+go: finding github.com/gogo/protobuf v1.3.2
+go: finding github.com/google/gofuzz v1.2.0
+go: finding gopkg.in/inf.v0 v0.9.1
+go: finding k8s.io/klog/v2 v2.5.0
+go: finding github.com/go-logr/logr v0.4.0
+go: finding sigs.k8s.io/structured-merge-diff/v4 v4.0.3
+go: finding github.com/json-iterator/go v1.1.10
+go: finding github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: finding github.com/modern-go/reflect2 v1.0.1
+go: finding gopkg.in/yaml.v2 v2.4.0
+go: finding golang.org/x/net v0.0.0-20210119194325-5f4716e94777
+go: finding golang.org/x/text v0.3.5
+go: finding github.com/gobwas/glob v0.2.3
+go: finding github.com/google/uuid v1.1.4
+go: finding go.uber.org/zap v1.16.0
+go: finding go.uber.org/atomic v1.7.0
+go: finding go.uber.org/multierr v1.6.0
+go: finding github.com/hashicorp/go-multierror v1.1.0
+go: finding github.com/hashicorp/errwrap v1.0.0
+go: finding k8s.io/api v0.19.3
+go: finding k8s.io/apiextensions-apiserver v0.20.1
+go: finding k8s.io/utils v0.0.0-20210111153108-fddb29f9d009
+go: finding sigs.k8s.io/yaml v1.2.0
+go: finding k8s.io/client-go v0.19.3
+go: finding github.com/golang/protobuf v1.4.3
+go: finding google.golang.org/protobuf v1.25.0
+go: finding github.com/googleapis/gnostic v0.5.4
+go: finding gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+go: finding github.com/davecgh/go-spew v1.1.1
+go: finding golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad
+go: finding golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf
+go: finding golang.org/x/oauth2 v0.0.0-20210201163806-010130855d6c
+go: finding golang.org/x/time v0.0.0-20201208040808-7e3f01d25324
+go: finding github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79
+go: finding github.com/peterbourgon/diskv v2.0.1+incompatible
+go: finding github.com/google/btree v1.0.0
+go: finding github.com/Azure/go-autorest/autorest v0.11.18
+go: finding github.com/Azure/go-autorest/autorest/adal v0.9.13
+go: finding github.com/Azure/go-autorest/autorest/date v0.3.0
+go: finding github.com/Azure/go-autorest/logger v0.2.1
+go: finding github.com/Azure/go-autorest/tracing v0.6.0
+go: finding github.com/form3tech-oss/jwt-go v3.2.2+incompatible
+go: finding cloud.google.com/go v0.76.0
+go: finding github.com/imdario/mergo v0.3.11
+go: finding github.com/spf13/pflag v1.0.5
+go: finding k8s.io/kube-aggregator v0.19.3
+go: finding github.com/hashicorp/golang-lru v0.5.4
+go: finding github.com/google/go-cmp v0.5.4
+go: finding github.com/dop251/goja v0.0.0-20200629185240-bfd59704b500
+go: finding github.com/dlclark/regexp2 v1.2.0
+go: finding github.com/go-sourcemap/sourcemap v2.1.3+incompatible
+go: finding github.com/dop251/goja_nodejs v0.0.0-20200706082813-b2775b86b9e0
+go: finding github.com/fsnotify/fsnotify v1.4.9
+go: finding github.com/hashicorp/go-hclog v0.14.1
+go: finding github.com/hashicorp/go-plugin v1.0.1
+go: finding google.golang.org/grpc v1.35.0
+go: finding google.golang.org/genproto v0.0.0-20210202153253-cf70463f6119
+go: finding github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d
+go: finding github.com/mitchellh/go-testing-interface v1.0.0
+go: finding github.com/oklog/run v1.0.0
+go: finding github.com/spf13/afero v1.4.1
+go: finding github.com/spf13/viper v1.7.1
+go: finding github.com/hashicorp/hcl v1.0.0
+go: finding github.com/magiconair/properties v1.8.4
+go: finding github.com/mitchellh/mapstructure v1.4.0
+go: finding github.com/pelletier/go-toml v1.7.0
+go: finding github.com/spf13/cast v1.3.1
+go: finding github.com/spf13/jwalterweatherman v1.0.0
+go: finding github.com/subosito/gotenv v1.2.0
+go: finding gopkg.in/ini.v1 v1.51.0
+go: finding github.com/gorilla/mux v1.8.0
+go: finding github.com/stretchr/testify v1.7.0
+go: finding github.com/pmezard/go-difflib v1.0.0
+go: finding github.com/docker/spdystream v0.0.0-20181023171402-6480d4af844c
+go: finding golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
+go: finding k8s.io/kube-openapi v0.0.0-20210113233702-8566a335510f
+go: finding github.com/jenkins-x/**-api/v4 v4.0.25
+go: finding github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32
+go: finding github.com/rawlingsj/jsonschema v0.0.0-20201130104235-44c4fb269f83
+go: finding github.com/xeipuuv/gojsonschema v1.2.0
+go: finding github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415
+go: finding github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb
+go: finding github.com/jenkins-x/**-helpers/v3 v3.0.84
+go: finding github.com/jenkins-x/**-kube-client/v3 v3.0.2
+go: finding github.com/evanphx/json-patch v4.9.0+incompatible
+go: finding github.com/jenkins-x/**-preview v0.0.160
+go: finding helm.sh/helm/v3 v3.5.0
+go: finding github.com/jenkins-x/**-pipeline v0.0.109
+go: finding github.com/satori/go.uuid v1.2.1-0.20180103174451-36e9d2ebbde5
+go: finding github.com/jenkins-x/pipeline v0.3.2-0.20210118090417-1e821d85abf6
+go: finding github.com/go-openapi/spec v0.19.7
+go: finding github.com/go-openapi/jsonpointer v0.19.3
+go: finding github.com/go-openapi/swag v0.19.7
+go: finding github.com/mailru/easyjson v0.7.1-0.20191009090205-6c0755d89d1e
+go: finding github.com/go-openapi/jsonreference v0.19.3
+go: finding github.com/PuerkitoBio/purell v1.1.1
+go: finding github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: finding github.com/google/go-containerregistry v0.4.0
+go: finding knative.dev/pkg v0.0.0-20210107022335-51c72e24c179
+go: finding gomodules.xyz/jsonpatch/v2 v2.1.0
+go: finding gopkg.in/evanphx/json-patch.v4 v4.9.0
+go: finding github.com/emicklei/go-restful v2.9.5+incompatible
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] Built cross stage deps: map[]                
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] Executing 0 build triggers                   
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Checking for cached layer 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:fd7a3178234eb474393e5871d795dabf854ca3a457a08232769885cab00bb1dd... 
+[36mINFO[0m[0001] No cached layer found for cmd COPY ./bin/ /  
+[36mINFO[0m[0001] Unpacking rootfs as cmd COPY ./bin/ / requires it. 
+[36mINFO[0m[0001] EXPOSE 8080                                  
+[36mINFO[0m[0001] cmd: EXPOSE                                  
+[36mINFO[0m[0001] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] ENTRYPOINT ["/octant-**"]                    
+[36mINFO[0m[0001] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0001] COPY ./bin/ /                                
+[36mINFO[0m[0001] Resolving 2 paths                            
+[36mINFO[0m[0001] Taking snapshot of files...                  
+[36mINFO[0m[0004] Pushing layer 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:fd7a3178234eb474393e5871d795dabf854ca3a457a08232769885cab00bb1dd to cache now 
+[33mWARN[0m[0004] error uploading layer to cache: failed to push to destination 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:fd7a3178234eb474393e5871d795dabf854ca3a457a08232769885cab00bb1dd: POST https://244418354921.dkr.ecr.us-east-2.amazonaws.com/v2/todo/cache/blobs/uploads/: NAME_UNKNOWN: The repository with name 'todo/cache' does not exist in the registry with id '244418354921' 
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/octant-** to an unshallow repository
+Generating change log from git ref 3aed52d2ec1894f12a48a4890d1b9a015fd05147 => cc5f589efc69e6cb672cc231ad28f4f999f37f32
+Associating user root in users.jenkins.io with email niranjankolly@gmail.com to git GitProvider user with login root-0 as emails match
+Adding label jenkins.io/git-github-userid=root-0 to user root in users.jenkins.io
+Finding issues in commit messages using git format
+WARNING: No release found for *************/octant-** and tag v0.0.45 so creating a new release
+Updated the release information at https://github.com/*************/octant-**/releases/tag/v0.0.45
+generated: /workspace/source/charts/octant-**/templates/release.yaml
+Created Release octant-**-0-0-45 resource in namespace **
+Updating PipelineActivity niranjankolli-octant-**-master-1 with version 0.0.45
+Updated PipelineActivities niranjankolli-octant-**-master-1 with release notes URL: https://github.com/*************/octant-**/releases/tag/v0.0.45
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+WARNING: No secrets found on "helm/repos" due: reading the secret "helm/repos" from vault: no secret "helm/repos" not found in vault
+Read credentials for https://storage.googleapis.com/chartmuseum.jenkins-x.io from vault helm/repos
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+WARNING: No secrets found on "helm/repos" due: reading the secret "helm/repos" from vault: no secret "helm/repos" not found in vault
+Read credentials for http://jenkins-x-chartmuseum:8080 from vault helm/repos
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file octant-**-0.0.45.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mniranjankolli-octant-jx-master-bsmst-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app octant-** version 0.0.45 to namespace **-staging
+Created Pull Request: https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/1
+Added label updatebot to Pull Request https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/1
+got git provider status pending from PR https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/1
+got git provider status pending from PR https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/1
+Pull Request https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/1 is merged at sha 94a6ff0afbf0f35bf207d006516886045f957b80
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names octant-**, **-octant-**, **-staging-octant-**
